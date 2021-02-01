@@ -1,2 +1,2 @@
 # SyncNFe
-A simple go implementation for SyncNFe int go
+A simple go implementation for SyncNFe in go
