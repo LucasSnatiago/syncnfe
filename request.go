@@ -1,4 +1,4 @@
-package mundipagg
+package syncnfe
 
 import (
 	"bytes"
