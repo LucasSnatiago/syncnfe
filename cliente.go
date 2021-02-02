@@ -41,6 +41,14 @@ type Cliente struct {
 	CodigoDoMunicipio  string // Opcional
 }
 
+// String retornar uma string cliente formatada
+func (c Cliente) String() string {
+	return fmt.Sprintf("%d|%d|%s|%s|%d|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%d|%d|%s|%s|%s|%s|%s|",
+		c.ID1, c.ID2, c.RazaoSocial, c.Endereco, c.Numero, c.Complemento, c.Bairro, c.Cidade, c.Estado, c.CEP, c.CNPJ,
+		c.IE, c.CPF, c.RG, c.DiaDeVencimento, c.Modelo, c.CFOP, c.Telefone, c.Email, c.CodigoDoConsumidor, c.TipoAssinante,
+		c.TipoUtilizacao, c.DataEmissao, c.DataPrestacao, c.NumeroNFe, c.Observacao, c.CodigoDoMunicipio)
+}
+
 /* TiposItensAssinantes
 1 - Comercial/Industrial
 2 - Poder Publico

@@ -1,5 +1,7 @@
 package syncnfe
 
+import "fmt"
+
 // NewFatura Retornar uma nova fatura
 func NewFatura() *Fatura {
 	return &Fatura{
@@ -41,4 +43,12 @@ type Fatura struct {
 	ValorAproxTributosFederais  int
 	ValorAproxTributosEstadual  int
 	ValorAproxTributosMunicipal int
+}
+
+// String retornar a Fatura formatada
+func (f Fatura) String() string {
+	return fmt.Sprintf("%d|%d|%s|%d|%s|%d|%s|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|%d|", f.ID1, f.ID2,
+		f.DescricaoServico, f.ValorUnitario, f.ICMS, f.AliquotaReducao, f.Unidade, f.QuantidadeContratada,
+		f.QuantidadeFornecida, f.AliquotaICMS, f.CodigoClassificacao, f.BC, f.ValoresIsentos, f.OutrosValores,
+		f.Desconto, f.ValorAproxTributosFederais, f.ValorAproxTributosEstadual, f.ValorAproxTributosMunicipal)
 }
