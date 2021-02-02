@@ -5,6 +5,11 @@ import (
 	"time"
 )
 
+// NewCliente Retorna um objeto de cliente vazio
+func NewCliente() *Cliente {
+	return &Cliente{}
+}
+
 // Cliente Estrutura que armazena todos os elementos de um Cliente
 type Cliente struct {
 	ID1                int
