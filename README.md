@@ -1,2 +1,5 @@
 # SyncNFe
-A simple go implementation for SyncNFe in go
+
+A simple go implementation for SyncNFe
+
+#NOT READY FOR PRODUCTION
